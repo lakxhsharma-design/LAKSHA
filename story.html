@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Story ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* 🔴 FULL BACKGROUND SETUP */
+    body {
+      min-height: 100vh;
+
+      background-image: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("bg-poster.jpg");   /* 👉 PUT YOUR POSTER NAME HERE */
+
+      background-size: cover;      /* fills screen */
+      background-position: center; /* keeps poster centered */
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* parallax feel */
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      text-align: center;
+      font-size: 3.4rem;
+      margin-bottom: 30px;
+      color: #ffb6c1;
+      text-shadow: 0 0 15px rgba(255,182,193,0.4);
+    }
+
+    /* LETTER */
+    .letter {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      padding: 40px 30px;
+      border-radius: 18px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .letter p {
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      text-align: right;
+      font-family: 'Sacramento', cursive;
+      font-size: 2rem;
+      color: #ffb6c1;
+      margin-top: 25px;
+    }
+
+    /* NEXT BUTTON */
+    .next-wrapper {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .next-btn {
+      padding: 12px 38px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background: #ffb6c1;
+      color: #000;
+      transition: 0.3s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.05);
+      background: #ffd1dc;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      .letter {
+        padding: 30px 22px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Our Story</h1>
+
+    <div class="letter">
+      <p>
+        IDK HOW TO START...UHM YEAH...So let's start with us like you have made me a complete difference personal...mujhe toh batane ki zarurat bhi nahi h kesa tha me HUH... jabse se aap ayi tabh se me thoda thoda karke accha bana improved bana or abhi bhi ho raha hu,aapke liye sabse best banne ki koshish...you have became a part of my life like sacchi wala part matlab aap nahi hougi toh there's no complete thing in my life .....mere har kaam me aapki advice h matlab sabh kuch me aapka role se you are the most important and top priority for me and us mujh se zada contribution h aapka hamari relationship me.....ik we are not together on this birthday but one day uske baad se hum hamesha saath me banayenge....I love you cutie I'm blessed and always be thankful to the God jisne hume partners banaya...I LOVE YOU      </p>
+
+      <div class="signature">
+        — Yours, always 💖
+      </div>
+    </div>
+
+    <div class="next-wrapper">
+      <button class="next-btn" onclick="goNext()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    function goNext() {
+      window.location.href = "her.html";
+    }
+  </script>
+
+</body>
+</html>

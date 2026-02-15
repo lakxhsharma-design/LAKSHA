@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 🖤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3.8rem;
+      margin-bottom: 30px;
+      color: #ffb6c1;
+      text-shadow: 0 0 15px rgba(255,182,193,0.4);
+    }
+
+    /* VIDEO AREA BIGGER + 1:1 */
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 520px;   /* Increased size */
+      aspect-ratio: 1/1;  /* Keeps 1:1 */
+      margin: 0 auto 50px;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 0 45px rgba(255,182,193,0.35);
+      animation: glow 3s infinite alternate;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Fills square nicely */
+      border-radius: 25px;
+    }
+
+    /* LETTER */
+    .letter {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 35px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      line-height: 1.9;
+      font-size: 1.05rem;
+    }
+
+    .letter p {
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      text-align: right;
+      font-family: 'Sacramento', cursive;
+      font-size: 2rem;
+      color: #ffb6c1;
+      margin-top: 25px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 25px rgba(255,182,193,0.25);
+      }
+      to {
+        box-shadow: 0 0 60px rgba(255,182,193,0.6);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .video-wrapper {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>This is you.</h1>
+
+    <!-- HER EDIT -->
+    <div class="video-wrapper">
+      <video src="her-edit.mp4" controls></video>
+    </div>
+
+    <!-- FINAL LETTER -->
+    <div class="letter">
+      <p>
+        I wanted to end this with something that truly shows how I see you.
+        Not just in photos. Not just in words.
+      </p>
+
+      <p>
+        You are my favorite view, my comfort place, and my biggest blessing.
+        Every smile of yours feels like home to me.
+      </p>
+
+      <p>
+        This edit is just a small reflection of how special you are —
+        because no screen can ever hold what you mean to me.
+      </p>
+
+      <p>
+        Happy Birthday, my love.
+      </p>
+
+      <div class="signature">
+        — Your motu 🖤
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

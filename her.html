@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+
+      /* 🔴 ADD YOUR BG IMAGE HERE */
+      background-image: url("bg-poster1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    /* DARK OVERLAY */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    /* PAGE CONTAINER */
+    .page {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 3.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* LETTER BOX */
+    .letter {
+      max-width: 780px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      padding: 35px 28px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      line-height: 1.9;
+      font-size: 1.05rem;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .letter h2 {
+      font-family: 'Sacramento', cursive;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .letter p {
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    /* NEXT BUTTON */
+    .next-wrap {
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    .next-btn {
+      padding: 12px 40px;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      background: #fff;
+      color: #000;
+      transition: 0.3s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.07);
+      background: #f2f2f2;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      .letter {
+        font-size: 0.98rem;
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="page">
+    <h1>Just You ✨</h1>
+
+    <div class="letter">
+      <h2>My Love ❤️</h2>
+
+      <p>
+        ABH LET'S COME TO MY FAV THING..AAPKI TAREEF KARNA....SO I have a crush on you mazak se hatke abhi bhi h...pata h mere saath kuch hota h ik you are there incan tell you everything and you will not judge me you will listen to me...aapki pampering se toh sahi me baccha ban jata hu HEHEHEHEHE.....I love you cutu I LOVE YOU SOOOOOOOOOOO SOOOOOOOOOOOOOOOO MUCHHHHHHHHHHH...Aap pe crush esai thodi aya tha mujhe...you are the most beautiful person the most perfect....aapki aankhe were the first factor jisne mujhe catch kiya..THEY ARE THE BIGGEST BLACK HOLE EK DUM TAGDI GRAVITY H UNME..they are the perfectest like just meri sari tension chale jati h unhe dekh ke..agar hum bed pe h jese toh me toh unlimited aapki ankhe taad sakta hu👉🏻👈🏻....aapke baal toh bus effortlessly best sundar or face toh WOOW...aap sundar ho ye toh pata h sabhko....par aap andar se I MEAN ANDAR SE AS A PERSON NOT ANOTHER ANDAR SE..HUH....You are the Sweetest person like just the purest....aap kuch showoff nahi karti na kuch or itne achhe se baate karti ho itne acche WHAT TO SAY SANSKAR yeah.. best etiquettes h...aap ek dum perfect bahu banogi mere ghar ki ik...aap jo caring ho itni understanding ho I JUST LOVE YOU....Aaap se zada care koi nahi karta meri...ik I don't deserve you..you are just at another level but I'm trying and always be trying to be perfect for you...ik I always do the things that hurts you..par sacchi kabhi wo intentions nahi hote the but I LOVE YOU I'M SORRY MY KUCHIIIIIIIIII....Aap bus sabse perfect ho mere liye I don't want another person... I'm happy and the happiest with you...you are dusri mummy...I LOVE WHEN YOU ORDER ME...I love you be your baccha👉🏻👈🏻.....(Ek mucchad me muh se ye baate acchi nahi lagri h)...NVM HAPPIEST BIRTHDAY MY PRINCESS I LOVE YOU SOOOOOOOOOOO SOOOOOOOOOOOOOOOO MUCHHHHHHHHHHH.....idc kisi ke bare me all matters to me is you and your happiness...wo ek smile ke liye me toh hamesha joker ban ke reh lu...I love you the mostest!!!!!!!!!!! And this is me, quietly promising you one thing —  
+        I’m here. Always.
+      </p>
+
+      <div class="signature">
+        — Yours, Lakshay 💖
+      </div>
+    </div>
+
+    <div class="next-wrap">
+      <button class="next-btn" onclick="goNext()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    function goNext() {
+      window.location.href = "final.html"; // change later
+    }
+  </script>
+
+</body>
+</html>
